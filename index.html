@@ -1,0 +1,221 @@
+---
+layout: default
+title: Shoestrap Documentation
+---
+
+<div class="hero">
+	<div class="row">
+		<div class="large-12 columns">
+			<h1><i class="el-icon-wordpress"></i> Get ready for a better theme!</h1>
+
+			<div class="center">
+				<div class="smartphone">
+					<div class="content">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li style="width: 90%"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li style="width: 60%"></li>
+							<li></li>
+							<li></li>
+							<li style="width: 70%"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="tablet">
+					<div class="content">
+						<div class="wrap">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li style="width: 90%"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li style="width: 60%"></li>
+								<li></li>
+								<li></li>
+								<li style="width: 70%"></li>
+								<li style="width: 50%"></li>
+							</ul>
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li style="width: 90%"></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+								<li style="width: 60%"></li>
+								<li></li>
+								<li></li>
+								<li style="width: 70%"></li>
+								<li style="width: 80%"></li>
+							</ul>
+						</div>
+					</div>
+				</div> 
+
+				<div class="laptop">
+					<div class="content">
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li style="width: 90%"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li style="width: 60%"></li>
+							<li></li>
+							<li></li>
+							<li style="width: 70%"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li style="width: 50%"></li>
+						</ul>
+					</div>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div data-alert class="alert-box">
+	<p>You can now submit your own documentations and help us complete this task by forking our documentation repository on <a class="alert-link" href="https://github.com/shoestrap/shoestrap-documentation">github</a>.</p>
+	<p>We use <a class="alert-link" href="http://jekyllrb.com/" target="_blank">Jekyll</a> to create this documentation site, so all you have to do in order to contribute to these docs is edit the file that interests you (or add a new file) on the <a href="https://github.com/shoestrap/shoestrap-documentation/tree/gh-pages/_posts"><code>_posts</code></a> folder and submit a pull request to our github repository. Please note the the files should be formatted using github markdown syntax for better consistency.</p>
+	</div>
+</div>
+
+<div class="row">
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>The Framework</label></li>
+			{% for post in site.categories.framework. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>Child Themes</label></li>
+			{% for post in site.categories.child-themes. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>Classes</label></li>
+			{% for post in site.categories.classes. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+</div>
+
+<div class="row">
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>Functions</label></li>
+			{% for post in site.categories.functions. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>Actions</label></li>
+			{% for post in site.categories.actions. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>Filters</label></li>
+			{% for post in site.categories.filters. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+</div>
+
+<hr>
+
+<div class="row deprecated">
+
+	<div data-alert class="alert-box alert">
+	<p>The below section contains functions & actions that are no longer included in the theme and have been deprecated. If you are have built extensions, plugins or child themes based on the Shoestrap theme and your theme has been using these, you should <strong>switch to the new actions, filters and methods as described inside each deprecated item.</strong></p>
+	</div>
+
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>Deprecated Functions</label></li>
+			{% for post in site.categories.functions-deprecated. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+
+	<div class="medium-4 columns">
+		<ul class="side-nav">
+
+			<li><label>Deprecated Actions</label></li>
+			{% for post in site.categories.actions-deprecated. %}
+				<li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
+			{% endfor %}
+
+		</ul>
+	</div>
+
+	<div class="medium-4 columns">
+		
+	</div>
+
+</div>
